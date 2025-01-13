@@ -35,6 +35,10 @@ dependencies:
   connectivity_plus: ^6.1.1
   url_launcher: ^6.3.1
   flutter_dotenv: ^5.2.1
+  flutter_spinkit: ^5.2.1
+  page_transition: ^2.2.1
+  get: ^4.6.6
+  google_fonts: ^6.2.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -66,6 +70,7 @@ flutter:
 
   assets:
     - .env
+    - assets/images/news_app_logo.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

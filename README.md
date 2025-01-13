@@ -41,7 +41,7 @@ Ensure you have the following installed:
 
 4. Set up an API key:
     - Visit [NewsAPI](https://newsapi.org/) and sign up to get your free API key.
-    - Add your API key to the `lib/constants.dart` file in the project:
+    - Add your API key to the `lib/services/NewsProviderApi.dart` file in the project:
       ```dart
       const String apiKey = 'YOUR_API_KEY';
       ```
@@ -60,15 +60,7 @@ Ensure you have the following installed:
 
 ## API Documentation
 
-This app utilizes the [News API](https://newsapi.org/docs/endpoints/everything) to fetch news articles. You can find more details on the available endpoints, request parameters, and usage limits in the API documentation.
-
-## Contributing
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Create a new Pull Request
+This app utilizes the [News API](https://newsapi.org/) to fetch news articles. You can find more details on the available endpoints, request parameters, and usage limits in the API documentation.
 
 ## License
 
