@@ -7,7 +7,7 @@ A Flutter application that allows users to browse the latest news articles from 
 - **Real-time News Updates**: Get the latest news from multiple categories such as Technology, Health, Sports, and more.
 - **News Articles with Images**: Display news articles along with relevant images, titles, dates, and source names.
 - **Categories Filtering**: Browse articles by categories to quickly find the topics that interest you.
-- **Search Functionality**: Easily search for news articles based on keywords.
+
 - **User-friendly Interface**: A clean and intuitive design built with Flutter for an optimal mobile experience.
 
 ## Getting Started
