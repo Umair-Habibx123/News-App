@@ -1,6 +1,6 @@
 # News App
 
-A Flutter application that allows users to browse the latest news articles from various categories using the [News API](https://newsapi.org/). The app fetches news articles, displays them with images, titles, dates, and sources, and offers an interactive UI for a seamless user experience. Download APK Here [APK](https://github.com/Umair-Habibx123/News-App/raw/main/APK/app-release.apk)
+A Flutter application that allows users to browse the latest news articles from various categories using the [News API](https://newsapi.org/). The app fetches news articles, displays them with images, titles, dates, and sources, and offers an interactive UI for a seamless user experience. Download APK Here [APK](https://github.com/Umair-Habibx123/News-App/raw/main/APK/news_app.apk)
 
 ## Features
 
