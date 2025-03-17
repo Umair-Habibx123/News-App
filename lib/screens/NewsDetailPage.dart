@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class NewsDetailPage extends StatelessWidget {
   final Map<String, dynamic> article;
@@ -17,38 +17,38 @@ class NewsDetailPage extends StatelessWidget {
     }
   }
 
-  void _openUrl(BuildContext context, String url) {
-    if (url.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("URL is empty.")),
-      );
-      return;
-    }
+  // void _openUrl(BuildContext context, String url) {
+  //   if (url.isEmpty) {
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       const SnackBar(content: Text("URL is empty.")),
+  //     );
+  //     return;
+  //   }
 
-    if (Theme.of(context).platform == TargetPlatform.android) {
-      _openUrlAndroid(url);
-    } else {
-      // Fallback for non-Android platforms
-      _launchUrlFallback(url, context);
-    }
-  }
+  //   if (Theme.of(context).platform == TargetPlatform.android) {
+  //     _openUrlAndroid(url);
+  //   } else {
+  //     // Fallback for non-Android platforms
+  //     _launchUrlFallback(url, context);
+  //   }
+  // }
 
-  Future<void> _launchUrlFallback(String url, BuildContext context) async {
-    try {
-      final uri = Uri.parse(url);
-      if (!await canLaunchUrl(uri)) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Cannot launch URL: $url")),
-        );
-        return;
-      }
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Error: ${e.toString()}")),
-      );
-    }
-  }
+  // Future<void> _launchUrlFallback(String url, BuildContext context) async {
+  //   try {
+  //     final uri = Uri.parse(url);
+  //     if (!await canLaunchUrl(uri)) {
+  //       ScaffoldMessenger.of(context).showSnackBar(
+  //         SnackBar(content: Text("Cannot launch URL: $url")),
+  //       );
+  //       return;
+  //     }
+  //     await launchUrl(uri, mode: LaunchMode.externalApplication);
+  //   } catch (e) {
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       SnackBar(content: Text("Error: ${e.toString()}")),
+  //     );
+  //   }
+  // }
 
 
   @override
